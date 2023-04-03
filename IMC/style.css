@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;700&display=swap");
+
+/*
+font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 400vh;
+  font-family: "Lora", serif;
+  background: linear-gradient(
+    to right,
+    rgba(63, 67, 196, 0.7),
+    rgb(56, 100, 234)
+  );
+  padding: clamp(20px, 5vw, 50px) 10px 10px;
+}
+
+.container {
+  max-width: 850px;
+  background: aliceblue;
+  border: 1px solid #333;
+  padding: 25px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px hwb(0 0% 100% / 0.3);
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 35px;
+  font-weight: 300;
+}
+
+h1 span {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.inputs-container {
+  display: flex;
+  justify-content: center;
+}
+
+.inputs-container label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.inputs-container input {
+  min-width: 350px;
+  font-size: 15px;
+  padding: 15px;
+  border: none;
+  border-bottom: 1.5px solid #333;
+  box-shadow: 0 5px 5px #333;
+  border-radius: 5px;
+}
+
+.inputs-container input:focus {
+  outline: 1px solid #333;
+}
+
+.input-group:nth-child(2) {
+  margin-left: 20px;
+}
+
+form button {
+  font-size: 20px;
+  min-width: 200px;
+  margin: 40px auto;
+  display: block;
+  padding: 10px;
+  font-weight: 700;
+  border-radius: 5px;
+  background: rgb(210, 217, 18);
+  cursor: pointer;
+  box-shadow: 0 2px 3px;
+}
+
+form button:hover {
+  background: rgb(230, 193, 8);
+}
+
+.info {
+  text-align: center;
+}
+
+.bmi-value {
+  font-size: 45px;
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+
+.result {
+  font-size: 30px;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(63, 67, 196, 0.7);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(56, 100, 234);
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 600px;
+  }
+
+  .inputs-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-group:nth-child(2) {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+
+  .input-group input {
+    width: 100%;
+    min-width: auto;
+  }
+}
