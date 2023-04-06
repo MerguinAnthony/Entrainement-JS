@@ -1,0 +1,27 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  color: blue;
+}
+
+.btn-hero {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 20px;
+}
